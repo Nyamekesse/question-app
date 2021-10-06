@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Anton;
+    src: url(../fonts/Anton/Anton-Regular.ttf);
+}
+* {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    font-family: "Anton", sans-serif;
+}
+body {
+    background-color: rgb(163, 165, 255);
+    position: relative;
+}
