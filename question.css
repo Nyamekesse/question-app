@@ -43,7 +43,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* align-items: center; */
 }
 .wrapper-contain .question-box .q-box .inner {
     display: flex;
@@ -61,10 +60,10 @@ section {
 
 .answer {
     display: none;
-    transition: all .5s ease-in;
 }
 .show-text .answer {
     display: block;
+    /* transition: all 3s ease-in; */
 }
 hr {
     margin: 1.5rem 0;
@@ -72,8 +71,27 @@ hr {
 p {
     font-size: 1.4rem;
 }
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    z-index: 5;
+}
 .fa-plus-square,
 .fa-minus-square {
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
+}
+.fa-plus-square {
+    display: inline-block;
+}
+.fa-minus-square {
+    display: none;
+}
+
+.show-text .fa-minus-square {
+    display: inline-block;
+}
+.show-text .fa-plus-square {
+    display: none;
 }
